@@ -1,4 +1,4 @@
-name: AX3600 OpenWRT Build
+name: ax6 OpenWRT Build
 
 on:
 #  schedule:
@@ -101,7 +101,7 @@ jobs:
       id: create_release
       uses: ncipollo/release-action@v1.12.0
       with:
-        name: ax3600-${{ env.tag_name }}-${{ env.LAST_COMMIT_HASH }}
+        name: redmi-ax6-${{ env.tag_name }}-${{ env.LAST_COMMIT_HASH }}
         allowUpdates: true
         tag: ${{ env.tag_name }}-${{ env.LAST_COMMIT_HASH }}
         replacesArtifacts: true

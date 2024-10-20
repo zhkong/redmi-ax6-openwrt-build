@@ -3,7 +3,7 @@
 # @Date: 2023-08-07 01:49:18
 # @LastEditors: zhkong
 # @LastEditTime: 2023-08-07 01:53:26
-# @FilePath: /xiaomi-ax3600-openwrt-build/scripts/preset-terminal-tools.sh
+# @FilePath: /xiaomi-ax6-openwrt-build/scripts/preset-terminal-tools.sh
 ###
 
 mkdir -p files/root

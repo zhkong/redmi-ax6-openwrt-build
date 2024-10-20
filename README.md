@@ -1,2 +1,2 @@
 # openwrt-fireware-build
-build for xiaomi ax3600 without WIFI
+build for xiaomi ax6 without WIFI

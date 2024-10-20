@@ -3,7 +3,7 @@
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
  # @LastEditTime: 2024-03-22 22:11:33
- # @FilePath: /xiaomi-ax3600-openwrt-build/scripts/prepare.sh
+ # @FilePath: /xiaomi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
 git clone https://github.com/AgustinLorenzo/openwrt.git --single-branch openwrt --depth 1
