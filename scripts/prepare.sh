@@ -62,6 +62,8 @@ mv temp/immortalwrt/package/emortal/default-settings package/new/default-setting
 cp ../config/redmi-ax6 .config
 make defconfig
 
+rm -rf temp
+
 # # 编译固件
 # make download -j$(nproc)
 # make -j$(nproc) || make -j1 V=s
