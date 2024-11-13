@@ -86,8 +86,8 @@ jobs:
       run: |
         rm -rf ./artifact/
         mkdir -p ./artifact/
-        mv openwrt/bin/targets/qualcommax/ipq807x/openwrt-qualcommax-ipq807x-redmi_ax6-initramfs-factory.ubi ./artifact/
-        mv openwrt/bin/targets/qualcommax/ipq807x/openwrt-qualcommax-ipq807x-redmi_ax6-squashfs-sysupgrade.bin ./artifact/
+        mv openwrt/bin/targets/qualcommax/ipq807x/openwrt-*.ubi ./artifact/
+        mv openwrt/bin/targets/qualcommax/ipq807x/openwrt-* ./artifact/
         mv openwrt/bin/targets/qualcommax/ipq807x/config.buildinfo ./artifact/
         cd ./artifact/
         ls -Ahl
