@@ -2,12 +2,12 @@
 # @Author: zhkong
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
- # @LastEditTime: 2024-11-13 12:59:20
+ # @LastEditTime: 2024-11-24 12:49:43
  # @FilePath: /redmi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
 # git clone https://github.com/AgustinLorenzo/openwrt.git --single-branch openwrt --depth 1
-git clone https://github.com/qosmio/openwrt-ipq.git -b qualcommax-6.x-nss-wifi --single-branch openwrt --depth 1
+git clone https://github.com/qosmio/openwrt-ipq.git -b 24.10-nss --single-branch openwrt --depth 1
 cd openwrt
 
 # 更新 Feeds
