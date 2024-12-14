@@ -2,7 +2,7 @@
 # @Author: zhkong
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
- # @LastEditTime: 2024-11-24 12:49:43
+ # @LastEditTime: 2024-12-14 18:48:11
  # @FilePath: /redmi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
@@ -23,9 +23,9 @@ cd openwrt
 git clone https://github.com/jerrykuku/luci-theme-argon.git --single-branch --depth 1 package/new/luci-theme-argon
 
 mkdir temp
-git clone https://github.com/immortalwrt/luci.git --single-branch --depth 1 temp/luci
-git clone https://github.com/immortalwrt/packages.git --single-branch --depth 1 temp/packages
-git clone https://github.com/immortalwrt/immortalwrt.git --single-branch --depth 1 temp/immortalwrt
+git clone https://github.com/immortalwrt/luci.git -b openwrt-24.10 --single-branch --depth 1 temp/luci
+git clone https://github.com/immortalwrt/packages.git -b openwrt-24.10 --single-branch --depth 1 temp/packages
+git clone https://github.com/immortalwrt/immortalwrt.git -b openwrt-24.10 --single-branch --depth 1 temp/immortalwrt
 
 ## KMS激活
 mv temp/luci/applications/luci-app-vlmcsd package/new/luci-app-vlmcsd
@@ -41,7 +41,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # AutoCore
 mv temp/immortalwrt/package/emortal/autocore package/new/autocore
-sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' package/new/autocore/files/luci-mod-status-autocore.json
+# sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' package/new/autocore/files/luci-mod-status-autocore.json
 
 rm -rf feeds/luci/modules/luci-base
 rm -rf feeds/luci/modules/luci-mod-status
