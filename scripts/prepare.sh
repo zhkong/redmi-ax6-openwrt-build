@@ -2,7 +2,7 @@
 # @Author: zhkong
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
- # @LastEditTime: 2024-12-14 18:48:11
+ # @LastEditTime: 2024-12-16 14:05:07
  # @FilePath: /redmi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
@@ -43,13 +43,13 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 mv temp/immortalwrt/package/emortal/autocore package/new/autocore
 # sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' package/new/autocore/files/luci-mod-status-autocore.json
 
-rm -rf feeds/luci/modules/luci-base
-rm -rf feeds/luci/modules/luci-mod-status
+# rm -rf feeds/luci/modules/luci-base
+# rm -rf feeds/luci/modules/luci-mod-status
 rm -rf feeds/packages/utils/coremark
 rm -rf package/emortal/default-settings
 
-mv temp/luci/modules/luci-base feeds/luci/modules/luci-base
-mv temp/luci/modules/luci-mod-status feeds/luci/modules/luci-mod-status
+# mv temp/luci/modules/luci-base feeds/luci/modules/luci-base
+# mv temp/luci/modules/luci-mod-status feeds/luci/modules/luci-mod-status
 mv temp/packages/utils/coremark package/new/coremark
 mv temp/immortalwrt/package/emortal/default-settings package/new/default-settings
 
