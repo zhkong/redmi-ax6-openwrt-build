@@ -2,11 +2,12 @@
 # @Author: zhkong
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
- # @LastEditTime: 2025-02-27 00:21:52
+ # @LastEditTime: 2025-03-12 18:40:14
  # @FilePath: /redmi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
-git clone https://github.com/openwrt/openwrt.git -b v24.10.0 --single-branch openwrt --depth 1
+git clone https://github.com/qosmio/openwrt-ipq.git -b 24.10-nss --single-branch --depth 1 openwrt
+# git clone https://github.com/openwrt/openwrt.git -b v24.10.0 --single-branch --depth 1 openwrt
 cd openwrt
 
 # 更新 Feeds
@@ -59,7 +60,7 @@ mv temp/immortalwrt/package/emortal/default-settings package/new/default-setting
 # bash ../scripts/preset-terminal-tools.sh
 
 # config file
-cp ../config/redmi-ax6 .config
+cp ../config/redmi-ax6/openwrt-official .config
 make defconfig
 
 rm -rf temp
