@@ -2,7 +2,7 @@
 # @Author: zhkong
 # @Date: 2023-07-25 17:07:02
  # @LastEditors: zhkong
- # @LastEditTime: 2025-05-18 01:52:34
+ # @LastEditTime: 2025-05-18 01:53:59
  # @FilePath: /redmi-ax6-openwrt-build/scripts/prepare.sh
 ###
 
@@ -61,7 +61,8 @@ mv temp/immortalwrt/package/emortal/default-settings package/new/default-setting
 # bash ../scripts/preset-terminal-tools.sh
 
 # config file
-cp ../config/redmi-ax6/AgustinLorenzo-openwrt .config
+# cp ../config/redmi-ax6/AgustinLorenzo-openwrt .config
+cp ../config/redmi-ax6/openwrt-official .config
 make defconfig
 
 rm -rf temp
